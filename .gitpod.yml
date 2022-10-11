@@ -8,7 +8,8 @@ ports:
     name: Website
     description: Preview of Website
   - port: 5900
-    onOpen: ignore
+    onOpen: open-browser
+    visibility: public
     name: VNC
     description: VNC Server
   - port: 6080

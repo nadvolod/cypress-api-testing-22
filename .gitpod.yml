@@ -1,0 +1,24 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
+    name: Website
+    description: Preview of Website
+  - port: 5900
+    onOpen: ignore
+    name: VNC
+    description: VNC Server
+  - port: 6080
+    onOpen: open-browser
+    visibility: public
+    name: VNC
+    description: VNC Viewer
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/configure/workspaces/tasks/
+tasks:
+  - init: npm install
+    command: npx cypress open
+    name: Install

@@ -98,67 +98,18 @@ The safest way to ensure that we all have the same environment is for us to [use
 
 ℹ️ Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local environment.
 
-### Fork the repo
+1. You should already have started a Gitpod setup in a new tab. The environment setup happens automaticatically. If you didn't, do that now by clicking the button to open in a new tab
 
-1. Sign up for a free [Github account](https://github.com/)
-2. Fork this respository
-
-- Make sure you are logged into Github
-- click the Fork in the upper right of the Github.
-- Give the repo a ⭐ or you can't participate in the workshop😝
-
-3. In the browser address bar, prepend the current GitHub url with `https://gitpod.io/#`
-
-   - The resulting url should look as follows:
-
-     > https://gitpod.io/#https://github.com/YOUR-USERNAME/comprehensive-testing-js
-
-4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier
+[![Try in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/nadvolod/cypress-api-testing-22)
 
 ### ✅ A new tab open with a simple ReactJS application should open
-
-ℹ️ Keep the app running, we will need it to run some sanity tests
-
-### Set your env variables
-
-In a new terminal, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
-
-```bash
-eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
-```
-```bash
-eval $(gp env -e SAUCE_ACCESS_KEY=<sauce_access_key>)
-```
-```bash
-eval $(gp env -e SCREENER_API_KEY=<screener_api_key>)
-```
-
-> Replace <sauce_username>, <sauce_access_key>, and <screener_api_key> with your credentials
-
-Once you have run those 3 commands, you can run the following commands to test your environment variables:
-
-```bash
-echo $SAUCE_USERNAME
-echo $SAUCE_ACCESS_KEY
-echo $SCREENER_API_KEY
-```
-
-### ✅ Your values should come back as expected
 
 ### Run tests
 
 Run sanity tests
 
-If your tests run in US Datacenter
-
 ```bash
 npm run test:sanity:us
-```
-
-If your tests run in EU Datacenter
-
-```bash
-npm run test:sanity:eu
 ```
 
 ### ✅👏Environment setup is complete if tests passed
@@ -201,10 +152,10 @@ git clone URL_OF_YOUR_FORK
 4. **Navigate to the directory of where you cloned your repo**
 
 ```bash
-cd YOUR_FORK_DIR/comprehensive-testing-js
+cd YOUR_FORK_DIR/cypress-api-testing-22
 ```
 
-### 3. Install dependencies and start the application
+### 3. Install dependencies
 
 - While inside your 'comprehensive-testing-js' directory, run the following command to install all dependencies
 
@@ -212,24 +163,9 @@ cd YOUR_FORK_DIR/comprehensive-testing-js
 npm install
 ```
 
-- After the dependency installation has completed, start the application by running the following:
-
-```bash
-npm run start
-```
-
 ### 4.Follow the rest of the setup instructions
 
 Follow the [same steps](#Run-tests) for running tests.
-
-ℹ️ The main difference is that you will set environmenta variables by [following these instructions](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables) depending on your OS.
-
-ℹ️ Some individuals aren't allowed to set their environment variables on their machines (Employer policy). In that case, you can hardcode them by modifying
-
-- [3 visual keys](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.visual.conf.js#L2-L9)
-- [2 keys for functional tests](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.sanity.conf.js#L9-L10)
-
-You will need to hardcode these values as we do exercises.
 
 ### 5.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
 

@@ -4,6 +4,10 @@
 
 In this workshop you will learn how to do automated API testing with Cypress 10.
 
+> Before we start, open this in a new tab and let the container load.
+
+[![Try in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/nadvolod/cypress-api-testing-22)
+
 ## 🧠 You will learn
 
 ✅ Common HTTP methods

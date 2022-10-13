@@ -13,7 +13,7 @@ ports:
     name: VNC
     description: VNC Server
   - port: 6080
-    onOpen: open-browser
+    onOpen: ignore
     visibility: public
     name: VNC
     description: VNC Viewer
@@ -30,3 +30,5 @@ vscode:
     - usernamehw.errorlens
     - dsznajder.es7-react-js-snippets
     - oderwat.indent-rainbow
+    - dbaeumer.vscode-eslint
+    - standard.vscode-standard

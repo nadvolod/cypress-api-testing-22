@@ -109,10 +109,15 @@ The safest way to ensure that we all have the same environment is for us to [use
 Run sanity tests
 
 ```bash
-npm run test:sanity:us
+npm run test:sanity
 ```
 
 ### ✅👏Environment setup is complete if tests passed
+
+Report any issues to Nikolay Advolodkin
+
+  - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
+  - [Twitter](https://twitter.com/Nikolay_A00)
 
 ---
 

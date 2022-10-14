@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:sanity": "npx cypress run --spec '**/solution.cy.js'"
   },
   "keywords": [],
   "author": "",

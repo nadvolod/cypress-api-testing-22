@@ -102,7 +102,7 @@ The safest way to ensure that we all have the same environment is for us to [use
 
 [![Try in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/nadvolod/cypress-api-testing-22)
 
-### ✅ A new tab open with a simple ReactJS application should open
+### ✅ A new tab should open with a Cypress dashboard
 
 ### Run tests
 

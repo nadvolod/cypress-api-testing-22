@@ -1,7 +1,35 @@
 /// <reference types="cypress" />
 
-context("Network Requests", () => {
+describe("Network Requests", () => {
   const baseUrl = "https://jsonplaceholder.typicode.com";
+
+  //GET Requests
+  it("GET one todo returns one todo", () => {
+    // https://on.cypress.io/request
+    cy.request(`${baseUrl}/todos/1`).should((response) => {
+      // TODO expect() your (response.status).to.eq(200)
+      //TODO expect response.body to have a property that equals some value
+      //should we check anything else?
+    });
+  });
+  it("GET comments returns 200 and 500 body length", () => {
+    // https://docs.cypress.io/api/commands/request#Assertions
+    // TODO implement this on your own but try this for your expect .to.have.property("length").and.be.oneOf([500, 501])
+    });
+  });
+  it("GET a comment on postId=1 and id=2 returns valid email", () => {
+    //💡 Use query string parameters appended to your url like this /comments?postId=1&id=2
+    cy.request(`${baseUrl}/comments?postId=1&id=2`).should((response) => {
+      // TODO implement the rest of the test
+    });
+  });
+
+  it("GET /comments with cy.request({qs:})", () => {
+    // TODO this is the same test as above, but instead
+    // 💡use the `qs` object from cy.request()
+    //💡 https://docs.cypress.io/api/commands/request#Arguments
+    
+  });
 
   it("Can create new user on /posts", () => {
     // resource will not be really updated on the server but it will be faked as if

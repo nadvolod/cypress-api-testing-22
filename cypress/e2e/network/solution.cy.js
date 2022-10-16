@@ -31,7 +31,7 @@ context("Network Requests", () => {
     });
   });
 
-  it("GET /comments with query parameters", () => {
+  it("GET /comments with cy.request({qs:})", () => {
     cy.request({
       url: `${baseUrl}/comments`,
       qs: {

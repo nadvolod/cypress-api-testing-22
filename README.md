@@ -32,6 +32,7 @@ In this workshop you will learn how to do automated API testing with Cypress 10.
 
 - Setup
 - [API Testing](./docs/API.md)
+- [Authentication w/ APIs](https://github.com/nadvolod/js-code/tree/master/atomic-testing)
 - [Conclusions](./docs/CONCLUSIONS.md)
 
 ## Testing for Good
@@ -158,13 +159,6 @@ git clone URL_OF_YOUR_FORK
 
 ```bash
 cd YOUR_FORK_DIR/cypress-api-testing-22
-```
-
-### 3. Install dependencies
-
-- While inside your 'comprehensive-testing-js' directory, run the following command to install all dependencies
-
-```bash
 npm install
 ```
 
@@ -178,9 +172,9 @@ Follow the [same steps](#Run-tests) for running tests.
 
 ## Prizes
 
-Prizes will be given away for participation (tshirts, stickers...)
-
-At the end, one lucky winner will get a backpack!
+1. A lucky winner gets a backpack at the end
+2. Best student prize
+3. A lego set after TfG for someone that fills out feedback form
 
 ## Rules of engagement
 

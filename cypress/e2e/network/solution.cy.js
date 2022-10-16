@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context("Network Requests", () => {
+describe("Network Requests", () => {
   const baseUrl = "https://jsonplaceholder.typicode.com";
 
   it("GET one todo returns one todo", () => {
@@ -49,7 +49,7 @@ context("Network Requests", () => {
       });
   });
 
-  it("Can create new user on /posts", () => {
+  it("Can create new post on /posts", () => {
     // resource will not be really updated on the server but it will be faked as if
     cy.request("POST", `${baseUrl}/posts`, {
       userId: 11,
@@ -82,7 +82,16 @@ context("Network Requests", () => {
 
     // you can retrieve the XHR multiple times -
     // returns the same object.
-    cy.get('@post').should('have.property', 'status', 201)
+    cy.get('@post')      
+      .then((response) => {
+        console.log(response);
+        // expect the response status to be 201
+        expect(response).property("status").to.equal(201); // new entity created
+        // expect the response body to contain the title = "Cypress Test"
+        expect(response.body).to.contain({
+          title: "Cypress POST",
+        });
+    });
   });
 
   it("Can update posts", () => {
@@ -102,5 +111,14 @@ context("Network Requests", () => {
         body: "bar"
       });
     });
+
+    // Normally, you would be able to do this
+    // cy.request(`${baseUrl}/posts/1`).should((response) => {
+    //   expect(response.status).to.eq(200);
+    //   expect(response.body).to.contain({
+    //     title: "foo",
+    //     body: "bar"
+    //   });
+    // });
   });
 });

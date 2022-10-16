@@ -31,19 +31,46 @@ describe("Network Requests", () => {
     
   });
 
-  it("Can create new user on /posts", () => {
+  /**
+   * 
+   * POSTS
+   */
+
+  it("Can create new post", () => {
     // resource will not be really updated on the server but it will be faked as if
     // TODO supply the body of the request
     cy.request("POST", `${baseUrl}/posts`, {
-      // TODO add json body here
+      // TODO add properties: values here
     })
       // note that the value here is the returned value of the 2nd request
       // which is the new post object
       .then((response) => {
         console.log(response);
         // TODO expect the response status to be 201
-        // TODO expect the response body to contain the title = "Cypress Test"
+        // TODO expect the response body to contain the title = "YOUR TITLE"
       });
+  });
+
+  it("Can create new user on /posts v2", () => {
+    cy.request("POST", `${baseUrl}/posts`, {
+      // TODO set the body as before
+    }).as("post");
+
+    // tip: log the request object to see everything it has in the console
+    cy.get('@post').then(console.log)
+
+    // you can retrieve the XHR multiple times -
+    // returns the same object.
+    cy.get('@post')      
+      .then((response) => {
+        console.log(response);
+        // TODO expect the response status to be 201
+        // TODO expect the response body to contain the title = "Cypress POST"
+        // TODO what else do you want to expect?
+        expect(response.body).to.contain({
+          title: "Cypress POST",
+        });
+    });
   });
 
   it("Can update posts", () => {

@@ -57,6 +57,8 @@ Run the tests
 
 `npx cypress run --spec **/network/exercise.spec.js`
 
+### 🏋️‍♀️ Do all the other `GET` exercises. Let's revisit when you're done.
+
 ### 🏋️‍♀️ Let's try a `POST`
 
 > Use POST when you want to add a child resource under resources collection
@@ -82,6 +84,8 @@ Run the tests
 - Run the tests
 
 `npx cypress run --spec **/network/exercise.spec.js`
+
+### 🏋️‍♀️ Do all `POST` exercises.
 
 ### 🏋️‍♀️ Let's try a `PUT`
 

@@ -6,8 +6,6 @@
 
 ## Testing for Good
 
-## ✅ Add a call to action about the initiative
-
 ### 🌎Testing for Good enables great test automation engineering while shaping a more equitable society.👩‍💻
 
 Today, we're asking for donations for [Environmental Working Group](https://buy.stripe.com/9AQdU42lj9i7bHGcMN)
@@ -35,8 +33,6 @@ Anything helps!
    - [Youtube](https://youtube.com/ultimateqa)
    - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
    - [Twitter](https://twitter.com/Nikolay_A00)
-
-4. Give this repo a ⭐
 
 ## Bonus resources
 

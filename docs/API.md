@@ -126,12 +126,14 @@ Run the tests
 
 ✅ Use an HTTP client like API Fortress or Postman to perform non-GET operations
 
-## ⏭️[Let's test through the UI](./E2E-TESTS.md)
-
 🎁 Bonus exercises in `bonus.spec.js`
 
 ## Expand your knowledge
 
-[What is REST blog post](https://restfulapi.net/)
+👩‍💻[API Testing with Java by Bas Dijkstra](https://hopin.com/events/testing-for-good-workshops/registration)
 
-[API testing in JavaScript tutorial](https://testautomationu.applitools.com/javascript-api-testing/)
+👩‍💻[API Testing with Postman by Dina Kazakevich](https://hopin.com/events/testing-for-good-workshops/registration)
+
+📰[What is REST blog post](https://restfulapi.net/)
+
+🎦[API testing in JavaScript tutorial](https://testautomationu.applitools.com/javascript-api-testing/)

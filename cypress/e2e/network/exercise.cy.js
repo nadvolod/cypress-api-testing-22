@@ -82,6 +82,7 @@ describe("Network Requests", () => {
       title: "foo",
       body: "bar",
     }).then((response) => {
+      response
       //TODO expect response.status to equal what status code?
       //TODO expect response.statusText to equal what string?
       //TODO expect response.body to contain what title?

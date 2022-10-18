@@ -180,7 +180,7 @@ Follow the [same steps](#Run-tests) for running tests.
 
 <img src="https://media.giphy.com/media/CB26wRVi3B9T2/giphy.gif" alt="api-testing" width="500"/>
 
-- I'm here to serve you, your education, and your experience
+- I'm here to Serve You, your education, and your experience
 - Be kind, respectful, no judgment
 - Have fun
 

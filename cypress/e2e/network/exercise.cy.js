@@ -12,11 +12,12 @@ describe("Network Requests", () => {
       //should we check anything else?
     });
   });
+
   it("GET comments returns 200 and 500 body length", () => {
     // https://docs.cypress.io/api/commands/request#Assertions
     // TODO implement this on your own but try this for your expect .to.have.property("length").and.be.oneOf([500, 501])
-    });
   });
+
   it("GET a comment on postId=1 and id=2 returns valid email", () => {
     //💡 Use query string parameters appended to your url like this /comments?postId=1&id=2
     cy.request(`${baseUrl}/comments?postId=1&id=2`).should((response) => {
@@ -28,7 +29,7 @@ describe("Network Requests", () => {
     // TODO this is the same test as above, but instead
     // 💡use the `qs` object from cy.request()
     //💡 https://docs.cypress.io/api/commands/request#Arguments
-    
+
   });
 
   /**
@@ -61,7 +62,7 @@ describe("Network Requests", () => {
 
     // you can retrieve the XHR multiple times -
     // returns the same object.
-    cy.get('@post')      
+    cy.get('@post')
       .then((response) => {
         console.log(response);
         // TODO expect the response status to be 201
@@ -70,7 +71,7 @@ describe("Network Requests", () => {
         expect(response.body).to.contain({
           title: "Cypress POST",
         });
-    });
+      });
   });
 
   it("Can update posts", () => {

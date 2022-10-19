@@ -38,8 +38,8 @@
 
 ### 🏋️‍♀️ Let's automate a `GET`
 
-- Go to `cypress/integration/network/exercise.spec.js`
-- Add the following code inside of `context(){}`
+- Go to `cypress/e2e/network/exercise.cy.js`
+- Add the following code inside of `describe(){}`
 
 ```js
 it('comments returns 200 and 500 body length', () => {
@@ -55,7 +55,7 @@ it('comments returns 200 and 500 body length', () => {
 
 Run the tests
 
-`npx cypress run --spec **/network/exercise.spec.js`
+`npx cypress run **/network/exercise.cy.js`
 
 ### 🏋️‍♀️ Do all the other `GET` exercises. Let's revisit when you're done.
 

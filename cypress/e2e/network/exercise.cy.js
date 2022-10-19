@@ -5,7 +5,7 @@ describe("Network Requests", () => {
 
   //GET Requests
   it("GET one todo returns one todo", () => {
-    // https://on.cypress.io/request
+    // 💡 https://on.cypress.io/request
     cy.request(`${baseUrl}/todos/1`).should((response) => {
       // TODO expect() your (response.status).to.eq(200)
       //TODO expect response.body to have a property that equals some value
@@ -14,7 +14,7 @@ describe("Network Requests", () => {
   });
 
   it("GET comments returns 200 and 500 body length", () => {
-    // https://docs.cypress.io/api/commands/request#Assertions
+    // 💡 https://docs.cypress.io/api/commands/request#Assertions
     // TODO implement this on your own but try this for your expect .to.have.property("length").and.be.oneOf([500, 501])
   });
 

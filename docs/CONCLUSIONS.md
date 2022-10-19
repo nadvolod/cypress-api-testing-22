@@ -26,7 +26,7 @@ Anything helps!
 
 100% of donations go to support the cause.
 
-2. Please leave some quick and anonymous [feedback on this workshop](https://forms.gle/HtofXK4ttHgfpDWc6)
+2. Please leave some quick and anonymous [feedback on this workshop](https://docs.google.com/forms/d/e/1FAIpQLSej30dFIF4SNVqymxVd7sCWiHp5gFhrgGD6kgnWAz1ptpNMBQ/viewform?usp=sf_link)
 3. 📫 Follow me as I will do many more Testing for Good events
 
    - [JS Testing Newsletter](https://ultimateqa.ck.page/js-testing-tips)
